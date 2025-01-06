@@ -45,3 +45,39 @@ npm run dev
 ```
 
 This uses `ts-node` to execute the TypeScript code directly, which is useful during development as it reflects changes immediately without the need to build the project each time.
+
+### Code Quality
+
+This project uses [ESLint](https://eslint.org/) for linting and [Prettier](https://prettier.io/) for code formatting to maintain code quality and consistency.
+
+**Linting**
+
+To run the linter, use the following command:
+
+```bash
+npm run lint
+```
+
+(Note: The `--ext .ts` flag is no longer needed and has been removed from the `lint` script in `package.json`.)
+
+**Formatting**
+
+To check if the code is formatted, use the following command:
+
+```bash
+npm run format
+```
+
+To automatically format the code, use the following command:
+
+```bash
+npm run format:fix
+```
+
+### Continuous Integration
+
+The project has a basic Continuous Integration (CI) setup using [GitHub Actions](https://github.com/features/actions). On each push to the `main` branch and on each pull request, the CI workflow will:
+
+- Install dependencies.
+- Run the linter.
+- Check the code formatting.
