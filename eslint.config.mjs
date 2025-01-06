@@ -1,6 +1,6 @@
-import eslint from '@eslint/js';
-import tsPlugin from '@typescript-eslint/eslint-plugin';
-import prettierPlugin from 'eslint-plugin-prettier';
+import eslint from '@eslint/js'
+import tsPlugin from '@typescript-eslint/eslint-plugin'
+import prettierPlugin from 'eslint-plugin-prettier'
 
 export default [
   {
@@ -31,4 +31,4 @@ export default [
   {
     ignores: ['dist', 'node_modules'],
   },
-];
+]
