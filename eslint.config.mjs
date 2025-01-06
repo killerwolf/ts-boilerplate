@@ -1,15 +1,15 @@
-const eslint = require('@eslint/js');
-const tsPlugin = require('@typescript-eslint/eslint-plugin');
-const prettierPlugin = require('eslint-plugin-prettier');
+import eslint from '@eslint/js';
+import tsPlugin from '@typescript-eslint/eslint-plugin';
+import prettierPlugin from 'eslint-plugin-prettier';
 
-module.exports = [
+export default [
   {
     files: ['**/*.ts', '**/*.tsx'],
     languageOptions: {
-      parser: require('@typescript-eslint/parser'),
+      parser: await import('@typescript-eslint/parser'),
       parserOptions: {
-        project: true,
-        tsconfigRootDir: __dirname,
+        project: './tsconfig.json',
+        tsconfigRootDir: new URL('.', import.meta.url).pathname,
       },
       globals: {
         node: true,
