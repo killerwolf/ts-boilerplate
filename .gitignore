@@ -1,0 +1,21 @@
+# Node.js Modules
+node_modules/
+
+# Compiled Output
+dist/
+
+# Environment Variables
+.env
+
+# Logs
+*.log
+
+# Editor Specific
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# macOS
+.DS_Store
