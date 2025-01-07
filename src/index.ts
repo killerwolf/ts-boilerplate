@@ -1,9 +1,9 @@
-import { greet } from './lib/greeter'
-import { Person } from './types'
+import { Person } from './types.js';
+import { greet } from './lib/greeter.js';
 
 const person: Person = {
-  firstName: 'Jane',
-  lastName: 'Doe',
-}
+  firstName: 'John',
+  lastName: 'Doe'
+};
 
-console.log(greet(`${person.firstName} ${person.lastName}`))
+console.log(greet(person));
